@@ -7,8 +7,9 @@ import tkinter as tk
 
 root = tk.Tk()
 
-mylabel = tk.Label(root, text = "hello world!")
-
-mylabel.pack()
+for i in range(10):
+    for j in range(10):
+        mylabel = tk.Label(root, text = "p" + str(i) + str(j))
+        mylabel.grid(row = i, column = j)
 
 root.mainloop()
