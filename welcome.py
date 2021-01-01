@@ -38,9 +38,10 @@ def welcome():
     
     
 # button
-start_btn = tk.Button(root, text="Start", font=("Helvetica", 30),
-                      width=20, fg="white", bg = "coral1", command = welcome)
-start_btn_window = canvas.create_window(225, 500, width=200, window=start_btn)
+start_btn = tk.Button(root, text="Start", font=("Helvetica", 30), width=20,
+                      fg="white", bg="coral1", command=welcome)
+start_btn_window = canvas.create_window(225, 500, width=200,
+                                        window=start_btn)
 
 # helper function for binding
 def clear(e):
